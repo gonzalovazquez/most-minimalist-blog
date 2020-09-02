@@ -14,4 +14,4 @@ def home():
         entry_content = request.form.get("content")
         database.create_entry(entry_content, datetime.datetime.today().strftime("%b %d"))
 
-    return render_template("home.html", entries=database.retrieve_entries())
+    return render_template("index.html", entries=database.retrieve_entries())
