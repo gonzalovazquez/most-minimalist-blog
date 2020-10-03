@@ -3,7 +3,7 @@ import pyrebase
 config = {
   "apiKey": " AIzaSyB6SKFYNWI9gpduiT2Qnvb-jP08rMF8yjs",
   "authDomain": "minimalist-blog.firebaseapp.com",
-  "databaseURL": "https://minimalist-blog.firebaseio.com",
+  "databaseURL": "https://minimalist-blog-c74d1.firebaseio.com/",
   "storageBucket": "minimalist-blog.appspot.com"
 }
 

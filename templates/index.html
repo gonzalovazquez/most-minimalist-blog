@@ -10,18 +10,19 @@
 
         <div class="container">
             <form method="POST">
-                <textarea name="content"></textarea>
+                <input type="text" name="name"/>
+                <textarea name="body"></textarea>
                 <input type="submit" />
             </form>
 
             <div class="entries">
-                {% for entry in entries %}
+                {% for entry in entries.items() %}
                 <div class="entry">
                     <div class="entry-title">
-                        {{ entry[0] | truncate(30, true) }}
-                        <span class="entry-date">• {{ entry[1] }}</span>
+                        {{ entry[1].name }}
+                        <span class="entry-date">• {{ entry[1].date }}</span>
                     </div>
-                    <p class="entry-content">{{ entry[0] }}</p>
+                    <p class="entry-content">{{ entry[1].body }}</p>
                 </div>
                 {% endfor %}
             </div>
